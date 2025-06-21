@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../images/aag1.jpg";
 
 function Home() {
   return (
@@ -21,9 +22,10 @@ function Home() {
       
       {/* Central Image Placeholder */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center pointer-events-none">
-        {/* Replace this div with your image later */}
-        <div className="w-80 h-80 bg-gray-300 rounded-full"></div>
+        {/* Replace this div with your image later */}        
+        <img src={logo} alt="Grooming" className="w-[500px] h-[500px] object-contain rounded-full" />
       </div>
+     
 
     </div>
   )

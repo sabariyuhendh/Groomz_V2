@@ -6,24 +6,52 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 flex items-center justify-between px-24 py-12 bg-transparent text-white z-50">
+    <nav className="w-full fixed top-0 left-0 flex items-center justify-between px-24 py-12 bg-transparent text-slate-300 z-50">
       {/* Logo */}
       <div className="flex items-center gap-2">
         {/* Replace with your logo image */}
-        <span className="font-medium text-2xl tracking-widest">County</span>
+        <span className="font-medium text-2xl tracking-widest">The King's Chair</span>
       </div>
     
       {/* Desktop Nav Links */}
       <div className="hidden md:flex gap-8 text-xl">
-          <a href="#" className="hover:text-gray-400 transition">Home</a>
-          <a href="#" className="hover:text-gray-400 transition">Products</a>
-          <a href="#" className="hover:text-gray-400 transition">My Bookings</a>
-          <a href="#" className="hover:text-gray-400 transition">Book Service</a>
-          <a href="#" className="hover:text-gray-400 transition">Cart</a>
+          <a href="#" className="relative group hover:text-white transition-all duration-300 ease-out">
+            <span className="relative z-10">Home</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a>
+          <a href="#" className="relative group hover:text-white transition-all duration-300 ease-out">
+            <span className="relative z-10">Products</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a>
+          <a href="#" className="relative group hover:text-white transition-all duration-300 ease-out">
+            <span className="relative z-10">My Bookings</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a>
+          <a href="#" className="relative group hover:text-white transition-all duration-300 ease-out">
+            <span className="relative z-10">Book Service</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a>
+          <a href="#" className="relative group hover:text-white transition-all duration-300 ease-out">
+            <span className="relative z-10">Cart</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a>
       </div>
       <div className=" text-xl flex items-center gap-4">
-        <button>Login</button>
-        <button>Profile</button>
+        <button className="relative group hover:text-white transition-all duration-300 ease-out">
+          <span className="relative z-10">Login</span>
+          <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+          <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+        </button>
+        <button className="relative group hover:text-white transition-all duration-300 ease-out">
+          <span className="relative z-10">Profile</span>
+          <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+          <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+        </button>
       </div>
       
       {/* Hamburger for mobile */}
@@ -34,11 +62,31 @@ function Navbar() {
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
         <ul className="absolute top-full left-0 w-full bg-[#181818] flex flex-col items-center gap-6 py-6 md:hidden shadow-lg animate-fade-in z-20">
-          <li><a href="#" className="hover:text-gray-400 transition">About Us</a></li>
-          <li><a href="#" className="hover:text-gray-400 transition">Product</a></li>
-          <li><a href="#" className="hover:text-gray-400 transition">My Bookings</a></li>
-          <li><a href="#" className="hover:text-gray-400 transition">Book Service</a></li>
-          <li><a href="#" className="hover:text-gray-400 transition">Cart</a></li>
+          <li><a href="#" className="relative group hover:text-blue-300 transition-all duration-300 ease-out">
+            <span className="relative z-10">About Us</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a></li>
+          <li><a href="#" className="relative group hover:text-blue-300 transition-all duration-300 ease-out">
+            <span className="relative z-10">Product</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a></li>
+          <li><a href="#" className="relative group hover:text-blue-300 transition-all duration-300 ease-out">
+            <span className="relative z-10">My Bookings</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a></li>
+          <li><a href="#" className="relative group hover:text-blue-300 transition-all duration-300 ease-out">
+            <span className="relative z-10">Book Service</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a></li>
+          <li><a href="#" className="relative group hover:text-blue-300 transition-all duration-300 ease-out">
+            <span className="relative z-10">Cart</span>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-500 ease-out group-hover:animate-pulse"></div>
+            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent group-hover:w-full transition-all duration-700 ease-out delay-100 opacity-60"></div>
+          </a></li>
         </ul>
       )}
     </nav>
